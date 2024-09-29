@@ -5,12 +5,7 @@ import Diary from "./pages/Diary";
 import New from "./pages/New";
 import Notfound from "./pages/Notfound";
 
-// 이미지 불러오기
-import emotion1 from "./assets/emotion1.png";
-import emotion2 from "./assets/emotion2.png";
-import emotion3 from "./assets/emotion3.png";
-import emotion4 from "./assets/emotion4.png";
-import emotion5 from "./assets/emotion5.png";
+import { getEmotionImage } from "./util/get-emotion-image"; // 이미지 불러오기
 
 // 페이지 라우팅 설정
 // 1. "/" : 모든 일기를 조회하는 Home 페이지
@@ -29,11 +24,11 @@ function App() {
     // :id은 url 파라미터를 나타냄
     <>
       <div>
-        <img src={emotion1} />
-        <img src={emotion2} />
-        <img src={emotion3} />
-        <img src={emotion4} />
-        <img src={emotion5} />
+        <img src={getEmotionImage(1)} />
+        <img src={getEmotionImage(2)} />
+        <img src={getEmotionImage(3)} />
+        <img src={getEmotionImage(4)} />
+        <img src={getEmotionImage(5)} />
       </div>
 
       <div>
