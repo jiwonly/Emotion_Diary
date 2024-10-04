@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom"; // url 파라미터의 값을 가져옴
+import { useSearchParams } from "react-router-dom"; // query string
 
 const Diary = () => {
   const params = useParams();
