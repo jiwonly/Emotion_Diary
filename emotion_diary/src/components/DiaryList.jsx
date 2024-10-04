@@ -27,7 +27,7 @@ const DiaryList = ({ data }) => {
   return (
     <div className="DiaryList">
       <div className="menu_bar">
-        <select onChange={onChangeSortType}>
+        <select value={sortType} onChange={onChangeSortType}>
           <option value={"latest"}>최신 순</option>
           <option value={"oldest"}>오래된 순</option>
         </select>
