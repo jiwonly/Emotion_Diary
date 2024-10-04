@@ -10,19 +10,19 @@ import Notfound from "./pages/Notfound";
 const mockData = [
   {
     id: 1,
-    createDate: new Date("2024-10-04").getTime(),
+    createdDate: new Date("2024-10-19").getTime(),
     emotionId: 1,
     content: "1번 일기 내용",
   },
   {
     id: 2,
-    createDate: new Date("2024-10-03").getTime(),
+    createdDate: new Date("2024-10-18").getTime(),
     emotionId: 2,
     content: "2번 일기 내용",
   },
   {
     id: 3,
-    createDate: new Date("2024-09-03").getTime(),
+    createdDate: new Date("2024-09-07").getTime(),
     emotionId: 3,
     content: "3번 일기 내용",
   },
@@ -87,12 +87,18 @@ function App() {
   return (
     <>
       <DiaryStateContext.Provider value={data}>
-        <DiaryDispatchContext.Provider value={{ onCreate, onUpdate, onDelete }}>
+        <DiaryDispatchContext.Provider
+          value={{
+            onCreate,
+            onUpdate,
+            onDelete,
+          }}
+        >
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/new" element={<New />} />
             <Route path="/diary/:id" element={<Diary />} />
-            <Route path="/edit/:id" element={<Edit />}></Route>
+            <Route path="/edit/:id" element={<Edit />} />
             <Route path="*" element={<Notfound />} />
           </Routes>
         </DiaryDispatchContext.Provider>
