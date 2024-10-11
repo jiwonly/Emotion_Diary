@@ -14,6 +14,8 @@ const New = () => {
     onCreate(input.createdDate.getTime(), input.emotionId, input.content);
     nav("/", { replace: true });
   };
+  // replace : true로 설정하면 페이지 이동 후 뒤로가기 버튼을 눌렀을 때
+  // 이전 페이지로 이동하지 않고 바로 앞 페이지로 이동
 
   return (
     <div>
