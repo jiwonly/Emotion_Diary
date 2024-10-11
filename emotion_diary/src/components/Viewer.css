@@ -1,0 +1,68 @@
+.Viewer > section {
+  width: 100%;
+  margin-bottom: 100px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Viewer > section > h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.Viewer .emotion_img_wrapper {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  color: white;
+  font-size: 25px;
+}
+
+.Viewer .emotion_img_wrapper_1 {
+  background-color: rgb(100, 201, 100);
+}
+
+.Viewer .emotion_img_wrapper_2 {
+  background-color: rgb(157, 215, 114);
+}
+
+.Viewer .emotion_img_wrapper_3 {
+  background-color: rgb(253, 206, 23);
+}
+
+.Viewer .emotion_img_wrapper_4 {
+  background-color: rgb(253, 132, 70);
+}
+
+.Viewer .emotion_img_wrapper_5 {
+  background-color: rgb(253, 86, 95);
+}
+
+.Viewer .content_wrapper {
+  width: 100%;
+  background-color: rgb(236, 236, 236);
+  border-radius: 5px;
+
+  word-break: keep-all;
+  /* 텍스트가 단어 단위로 줄바꿈 되도록, 가능한 단어가 끊기지 않도록 */
+  overflow-wrap: break-word;
+  /* 너무 긴 단어를 줄바꿈하여 화면 밖으로 넘치지 않도록 방지 */
+}
+
+.Viewer .content_wrapper > p {
+  padding: 20px;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2.5;
+  /* 텍스트 한 줄 한 줄의 크기를 좀 더 크게 */
+}
