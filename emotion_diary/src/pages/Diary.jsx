@@ -1,9 +1,9 @@
 import { useParams, useNavigate } from "react-router-dom"; // url 파라미터의 값을 가져옴
+import { getStringedDate } from "../util/get-stringed-date";
 import Header from "../components/Header";
 import Button from "../components/Button";
 import Viewer from "../components/Viewer";
 import useDiary from "../hooks/useDiary";
-import { getStringedDate } from "../util/get-stringed-date";
 
 const Diary = () => {
   const params = useParams();
