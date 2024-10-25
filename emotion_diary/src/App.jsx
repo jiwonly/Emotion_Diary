@@ -66,7 +66,7 @@ function App() {
       return;
     }
 
-    let maxId = 0;
+    let maxId = 1;
 
     // forEach : 배열의 각 요소에 대해 제공된 함수를 한번씩 실행
     parsedData.forEach((item) => {
