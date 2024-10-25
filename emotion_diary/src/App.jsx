@@ -15,7 +15,7 @@ function reducer(state, action) {
       // nextState 사용 X
       return action.data;
     case "CREATE": {
-      nextState  = [action.data, ...state];
+      nextState = [action.data, ...state];
       break;
     }
     case "UPDATE": {
@@ -44,7 +44,7 @@ export const DiaryDispatchContext = createContext();
 function App() {
   const [isLoading, setIsLoading] = useState(true);
   const [data, dispatch] = useReducer(reducer, []);
-  const idRef = useRef(0);
+  const idRef = useRef(1);
 
   // mount되었을 때 한번만 실행
   useEffect(() => {
