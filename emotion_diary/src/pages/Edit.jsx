@@ -25,7 +25,7 @@ const Edit = () => {
   };
 
   const onSubmit = (input) => {
-    if (window.confirm("일기를  정말 수정할까요?")) {
+    if (window.confirm("일기를 정말 수정할까요?")) {
       onUpdate(
         params.id,
         input.createdDate.getTime(),
